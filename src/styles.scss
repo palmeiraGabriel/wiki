@@ -5,7 +5,7 @@
 
 html {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     background-color: map-get($colors, "b0");
 }
 
@@ -31,17 +31,22 @@ b {
 
 @for $i from 1 through 6 {
     h#{$i} {
-        font-size: #{2 - ($i - 1) * .5}rem;
+        font-size: #{3 - ($i - 1) * .5}rem;
         padding-bottom: .5rem;
     }
 }
 h1 {
     font-family: 'Source Serif Pro', serif;
 }
-    
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
 
 p {
     font-size: 1rem;
+    line-height: 1.5rem;
     padding-bottom: .5rem;
 }
 

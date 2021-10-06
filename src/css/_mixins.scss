@@ -1,5 +1,4 @@
 @mixin container {
-    background-color: map-get($colors, "b0");
     box-shadow: 2px 2px 8px 1px rgba(map-get($colors, "b7"), .125);
 }
 

@@ -3,7 +3,32 @@
 
 :host {
     @include fixed;
+    display: grid;
+    justify-content: center;
+    grid-template:
+        "logo   menu" auto /
+        640px   640px;
     top: 0;
     height: $header-height;
     width: 100%;
+    .logo {
+        grid-area: logo;
+        z-index: 2;
+        align-self: start center;
+        place-self: center start;
+        height: 80%;
+        width: auto;
+        max-width: 640px;
+        padding: 0 2.5rem;
+        &-txt {
+            font-size: 1.5rem;
+            grid-area: logo;
+            align-self: center center;
+            place-self: center start;
+            padding: 0rem 6rem;
+        }
+        &-quote {
+            color: #80a040;
+        }
+    }
 }

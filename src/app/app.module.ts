@@ -8,6 +8,8 @@ import { MainComponent } from './components/main/main.component';
 import { NavComponent } from './components/nav/nav.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { JakartaServletComponent } from './components/pages/jakarta-servlet/jakarta-servlet.component';
+import { ComputerProgrammingComponent } from './components/pages/computer-programming/computer-programming.component';
+import { HomeComponent } from './components/pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { JakartaServletComponent } from './components/pages/jakarta-servlet/jaka
     MainComponent,
     NavComponent,
     FooterComponent,
-    JakartaServletComponent
+    JakartaServletComponent,
+    ComputerProgrammingComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
