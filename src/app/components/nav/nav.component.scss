@@ -1,0 +1,8 @@
+@import '../../../css/_mixins.scss';
+
+:host {
+    @include rounded;
+    grid-area: nav;
+    max-width: 288px;
+    padding: 2rem 1rem;
+}

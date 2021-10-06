@@ -1,0 +1,9 @@
+@import '../../../css/variables';
+@import '../../../css/mixins';
+
+:host {
+    @include fixed;
+    top: 0;
+    height: $footer-height;
+    width: 100%;
+}

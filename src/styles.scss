@@ -1,1 +1,49 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'css/reset.css';
+@import 'css/variables';
+@import 'css/mixins';
+
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    background-color: map-get($colors, "b0");
+}
+
+body {
+    display: grid;
+    place-items: center center;
+    align-items: center center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+code, pre {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 16px;
+    font-weight: 600;
+    background: map-get($colors, "b1");
+}
+
+b {
+    font-weight: 600;
+    color: map-get($colors, "$b6");
+}
+
+@for $i from 1 through 6 {
+    h#{$i} {
+        font-size: #{2 - ($i - 1) * .5}rem;
+        padding-bottom: .5rem;
+    }
+}
+h1 {
+    font-family: 'Source Serif Pro', serif;
+}
+    
+
+p {
+    font-size: 1rem;
+    padding-bottom: .5rem;
+}
+
+li {
+    padding-bottom: .5rem;
+}

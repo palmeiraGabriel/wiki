@@ -1,0 +1,19 @@
+@import '../css/variables';
+@import '../css/mixins';
+
+:host {
+    display: grid;
+    grid-template:
+        "header header  header  header" $header-height
+        ".      nav     main    .     " auto
+        ".      .       .       .     " auto
+        "footer footer  footer  footer" #{$footer-height} /
+        auto    1fr     4fr     auto;
+    gap: 1rem;
+    max-width: 960px;
+    min-height: 100vh;
+    
+    & > * {
+        @include container;
+    }
+}
