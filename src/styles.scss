@@ -19,8 +19,8 @@ body {
 
 code, pre {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: .8rem;
+    font-weight: 400;
     background: map-get($colors, "b1");
 }
 
@@ -52,4 +52,22 @@ p {
 
 li {
     padding-bottom: .5rem;
+}
+
+// h1, h2, h3, h4, h5, h6,
+// a, p, li {
+//     @include text;
+// }
+
+.alt {
+    color: map-get($colors, "primary");
+}
+
+@keyframes pop {
+    0% {
+        color: transparent;
+    }
+    100% {
+        color: initial;
+    }
 }
