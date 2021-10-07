@@ -1,8 +1,9 @@
 @import '../../../css/_mixins.scss';
+@import '../../../css/variables';
 
 :host {
-    @include rounded;
     grid-area: nav;
     max-width: 256px;
     padding: 2rem 1rem;
+    border-right: dashed map-get($colors, "primary");
 }

@@ -19,3 +19,13 @@ $colors: (
     "bD": #0e5a94,
     "bE": #b31e8d,
     "bF": #7a2d00);
+
+@keyframes border-pop {
+    0% {
+        border-color: transparent;
+    }
+    100% {
+        border-color: map-get($colors, "primary");
+    }
+    
+}

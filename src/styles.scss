@@ -20,7 +20,7 @@ body {
 code, pre {
     font-family: 'JetBrains Mono', monospace;
     font-size: .8rem;
-    font-weight: 400;
+    font-weight: 600;
     background: map-get($colors, "b1");
 }
 
@@ -70,4 +70,8 @@ li {
     100% {
         color: initial;
     }
+}
+
+.link {
+    font-weight: 600;
 }

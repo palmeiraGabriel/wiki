@@ -11,6 +11,10 @@ import { FooterComponent } from './components/footer/footer.component';
 import { JakartaServletComponent } from './components/pages/jakarta-servlet/jakarta-servlet.component';
 import { ComputerProgrammingComponent } from './components/pages/computer-programming/computer-programming.component';
 import { HomeComponent } from './components/pages/home/home.component';
+import { JavascriptComponent } from './components/pages/javascript/javascript.component';
+import { TypescriptComponent } from './components/pages/typescript/typescript.component';
+import { JavaComponent } from './components/pages/java/java.component';
+import { ProgrammingLanguageComponent } from './components/pages/programming-language/programming-language.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +25,11 @@ import { HomeComponent } from './components/pages/home/home.component';
     FooterComponent,
     JakartaServletComponent,
     ComputerProgrammingComponent,
-    HomeComponent
+    HomeComponent,
+    JavascriptComponent,
+    TypescriptComponent,
+    JavaComponent,
+    ProgrammingLanguageComponent
   ],
   imports: [
     FormsModule,
