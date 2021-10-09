@@ -15,6 +15,9 @@ import { JavascriptComponent } from './components/pages/javascript/javascript.co
 import { TypescriptComponent } from './components/pages/typescript/typescript.component';
 import { JavaComponent } from './components/pages/java/java.component';
 import { ProgrammingLanguageComponent } from './components/pages/programming-language/programming-language.component';
+import { MarvinComponent } from './components/pages/marvin/marvin.component';
+import { MavenComponent } from './components/pages/maven/maven.component';
+import { InfoComponent } from './components/pages/info/info.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { ProgrammingLanguageComponent } from './components/pages/programming-lan
     JavascriptComponent,
     TypescriptComponent,
     JavaComponent,
-    ProgrammingLanguageComponent
+    ProgrammingLanguageComponent,
+    MarvinComponent,
+    MavenComponent,
+    InfoComponent
   ],
   imports: [
     FormsModule,
