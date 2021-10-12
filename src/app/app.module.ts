@@ -15,10 +15,9 @@ import { JavascriptComponent } from './components/pages/javascript/javascript.co
 import { TypescriptComponent } from './components/pages/typescript/typescript.component';
 import { JavaComponent } from './components/pages/java/java.component';
 import { ProgrammingLanguageComponent } from './components/pages/programming-language/programming-language.component';
-import { MarvinComponent } from './components/pages/marvin/marvin.component';
 import { MavenComponent } from './components/pages/maven/maven.component';
-import { InfoComponent } from './components/pages/info/info.component';
-
+import { InfoContainerComponent } from './components/infos-wiki/info-container/info-container.component';
+import { HttpInfoComponent } from './components/infos-wiki/http-info/http-info.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,10 +32,12 @@ import { InfoComponent } from './components/pages/info/info.component';
     TypescriptComponent,
     JavaComponent,
     ProgrammingLanguageComponent,
-    MarvinComponent,
     MavenComponent,
-    InfoComponent
+    InfoContainerComponent,
+    HttpInfoComponent
+    
   ],
+  
   imports: [
     FormsModule,
     BrowserModule,

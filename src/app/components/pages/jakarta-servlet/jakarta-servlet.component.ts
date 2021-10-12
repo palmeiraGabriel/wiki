@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { WikiService } from 'src/app/service/wiki.service';
 
 @Component({
   selector: 'app-jakarta-servlet',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JakartaServletComponent implements OnInit {
 
-  constructor() { }
+
+
+  constructor(private wikiService:WikiService) { 
+
+  }
+
+  mostrarInfo(){
+    this.wikiService.sendClick();
+  }
+
 
   ngOnInit(): void {
+ 
   }
 
 }
